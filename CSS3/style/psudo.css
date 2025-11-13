@@ -1,0 +1,55 @@
+/* psudo elements */
+  div  h1::first-letter{
+    font-size: 100px;
+    color: red;
+    font-weight: bold;
+    font-family: monospace;
+}
+ div .para::first-line{
+    background-color:blue;
+    color: wheat; 
+    font-size: 22px;
+
+}
+div h1::before{
+   content: "my";
+}
+ div h1::after{
+    content: "..................!";
+    color: yellow;
+}
+div p::selection{
+color: wheat;
+background-color: red;
+
+   
+}      
+
+
+/* psude classes */
+/* :link refers to anchor noraml state */
+/* Unvisited link */
+ .psude-class{
+    border: 2px  solid red;
+}
+
+a{
+    color: yellow;
+    font-size: 32px;
+}
+a:hover{
+    color: red;
+    font-size: 32px;
+}
+a:focus{
+    color: palevioletred;
+    font-size: 20px;
+}
+a:active{
+color: blue;
+}
+a:visited{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+}  

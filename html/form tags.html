@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Form Tags
+</title>
+
+<style>
+body{
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<h1> forms Tags</h1>
+<!-- <center> -->
+<fieldset>
+<legend style="text-align:center;">HTML BASIC FORMS</legend>
+
+<form>
+<label>Fist Name:</label>
+<input type ="name" placeholder="Enter your firstname:" value="saravanan"/><br><br>
+
+<label>Last Name:</label>
+<input type ="text" placeholder="Enter your lastname:"/><br><br>
+
+<label>Email:</label>
+<input type="email"placeholder ="Enter your Email:" required/><br><br>
+
+<label>Password:</label>
+<input type ="password"placeholder="Enter your password:" required/><br><br>
+
+<label>Enter your Phone number:</label>
+<input type="number"/><br><br>
+
+<!-- phone number -->
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+
+<label>Select a course:</label>
+
+<select>
+<option disabled >select:</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>JAVASCRIPT</option>
+<option>BOOSTRAP</option>
+</select>
+
+<h2>Select Gender:</h2>
+<input type="radio" name="Group"/>
+<label>Male</label>
+<input type="radio"name="Group"/>
+<label>Female</label>
+<input type="radio"name="Group"/>
+<label>Others</label>
+
+<h2>Select Game:</h2>
+<input type="checkbox" />
+<label>Cricket</label>
+<input type="checkbox"/>
+<label>Tennis</label>
+<input type="checkbox"/>
+<label>Football</label><br><br>
+
+<label>Select your fav color:</label>
+<input type="color" /><br><br>
+
+<label>Select your date of birth:</label>
+<input type="date"/><br><br>
+
+<label>Select your date and time:</label>
+<input type="datetime-local"/><br><br>
+
+<label>Select your Month:</label>
+<input type="month"/><br><br>
+
+<label>Range:</label>
+<input type="range"/><br><br>
+
+<input type="reset"/><br><br>
+<input type="search"/><br><br>
+<input type="time"/><br><br>
+<input type="week"/><br><br>
+
+
+
+<label>choose your file:</label>
+<input type="file"/><br><br>
+
+<textarea rows="10" cols="20">
+Please your comment
+</textarea><br><br>
+
+
+
+
+
+<input type="submit" value="Submit"/>
+
+<form>
+</fieldset>
+
+<!-- </center> -->
+
+</body>
+</html>

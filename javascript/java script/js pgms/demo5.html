@@ -1,0 +1,44 @@
+<html>
+<head>
+<script type="text/javascript">
+function hello()
+{
+var a,b;
+a=document.getElementById('t1').value;
+b=document.f1.p1.value;
+if((a=="glidersoft") && (b=="sysway"))
+
+{
+ alert("valid user");
+}
+else
+ {
+ alert("Invalid User");
+ }
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<table name="table1" align="center" bgcolor="#cece9f">
+<tr>
+<td>Enter User name:- </td>
+<td>
+<input type="text" id="t1">
+</td>
+</tr>
+<tr>
+<td>Enter password:- </td>
+<td>
+<input type="password" name="p1">
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="login" name="b1" onclick="hello()">
+</td>
+</tr>
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<script language="javascript">
+
+
+function helo()
+{
+ alert('welcome to javascript');
+}
+</script>
+</head>
+<body>
+<input type="submit" value="clickme" name="btnclick"  onclick="helo()">
+
+
+
+</body>
+</html>

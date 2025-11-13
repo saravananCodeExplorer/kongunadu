@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> do while loop</title>
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <h1> do while loop</h1>
+    <script>
+        // // true condition
+        // let i =1
+        // do{
+        //     console.log(i)
+        //     i++
+        // }while(i<=10)
+
+        // // false condition 
+        // let j=50
+        // do{
+        //     console.log(j)
+        //     j++
+        // }while(j<50);
+     
+// Random number between 1 and 10
+// const randomNumber = Math.floor(Math.random() * 10) + 1;
+// let userGuess;
+
+// do {
+//     // Prompt the user for a guess
+//     userGuess = parseInt(prompt("Guess a number between 1 and 10: "), 10);
+
+//     if (userGuess < randomNumber) {
+//         console.log(`random low${randomNumber}`)
+//         // console.log(`Too low! ${randomNumber} Try again.${userGuess}`);
+//     } else if (userGuess > randomNumber) {
+//         console.log(`random hige${randomNumber}`)
+//         // console.log(`Too high! ${randomNumber} Try again.${userGuess}`);
+//     }
+// } while (userGuess !== randomNumber);
+
+// console.log(`Congratulations! You guessed it right. The number was ${randomNumber}.`);
+
+// 1. Print numbers 1 to 5
+i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+// 2. Print even numbers 2 to 10
+i = 2;
+do {
+    console.log(i);
+    i += 2;
+} while (i <= 10);
+
+// 3. Sum of numbers 1 to 5
+sum = 0;
+i = 1;
+do {
+    sum += i;
+    i++;
+} while (i <= 5);
+console.log("Sum:", sum);
+
+// 4. Countdown 5 to 1
+i = 5;
+do {
+    console.log(i);
+    i--;
+} while (i >= 1);
+
+// 5. Print multiplication table of 9
+i = 1;
+do {
+    console.log(`9 x ${i} = ${9 * i}`);
+    i++;
+} while (i <= 10);
+
+// 6. Reverse string
+str = "javascript";
+rev = "";
+i = str.length - 1;
+do {
+    rev += str[i];
+    i--;
+} while (i >= 0);
+console.log(rev);
+
+// 7. Print numbers until 3 is reached
+i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 3);
+
+// 8. Print array elements
+arr = [100, 200, 300];
+i = 0;
+do {
+    console.log(arr[i]);
+    i++;
+} while (i < arr.length);
+
+// 9. Ensure at least one run (even if condition is false)
+i = 10;
+do {
+    console.log("Runs at least once!");
+    i++;
+} while (i < 5);
+
+// 10. Ask until correct password (simulation)
+let password = "1234";
+let input = "0000"; // example
+do {
+    console.log("Wrong password, try again");
+    input = "1234"; // simulate correct input
+} while (input !== password);
+console.log("Access granted!");
+
+    </script>
+
+</body> 
+</html>

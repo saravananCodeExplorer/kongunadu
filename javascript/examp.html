@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let playGame = confirm("Shall we play sa,bu ,three.?");
+
+    if(playGame){
+      let playerChoice = prompt("Please enter sa ,bu ,three.");
+
+      if(playerChoice){
+               let playerOne =playerChoice.trim().toLowerCase();
+
+                 if(playerOne === "sa"|| playerOne==="bu" || playerOne === "three" ){
+                          
+        let computerChoice = (Math.random()*3+1);
+        console.log(Math.floor(computerChoice))
+
+        let computer = 
+            computerChoice === 1 ? "sa":
+            computerChoice === 2 ? "bu":
+            "three";
+
+            let result = 
+      playerOne === computer ? "Tie Game":
+      playerOne === "sa" && computer==="bu" ?
+      `playerOne:${playerOne}\n computer:${computer}\n Player Wins!:`:
+      playerOne === "bu" && computer === "three" ?
+      `playerOne: ${playerOne}\n computer:${computer}\n Player Wins!:`:
+      playerOne === "three" && computer === "sa" ?
+      `playerOne:${playerOne}\n computer:${computer}\n Player Wins!:`:
+      `playerOne:${playerOne}\n computer:${computer}\n Compuer is Wins!:`
+
+      alert(result);
+      let PlayAgain = confirm("Play Again?");
+      PlayAgain ? location.reload():
+      alert(" ok Thanks for playing");
+                 }
+                 else{
+                     alert("You didn' enter sa bu three .")
+      
+                           let PlayCrt = confirm("You have a Chance:");
+                         PlayCrt ? location.reload():alert(" Thanks for playing.")
+                 }
+      }
+else{
+    alert(" Maybe next time.")
+ }
+    }
+
+    else{
+     alert("I gues change your mind")
+    }
+  </script>
+</body>
+</html>

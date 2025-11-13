@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in js</title>
+    <script src=" "></script>
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <h1>ES6 Features:</h1>
+
+    <script>
+        // 1.Arrow function
+        // Arrow function provide a concise syntax for writting functions,
+        // especially useful for Short one-line operations.
+
+        let a=20
+        let b=20    
+        const addition =(a,b)=>a+b;
+
+        console.log(addition(a,b))
+        // 2.Template Literals
+
+        // Template literals allow embedding expression inside strings,
+        // providing a cleaner and more readable way to concatenate strings.
+        const firstName = "Saravanan"
+        const lastName ="Saro"
+        const fullName =`The firstName is ${firstName}, and the lastName is ${lastName}!)`
+        console.log(fullName)
+        
+        // 3.Destructuring Assignment
+        // Destructuring assignment simplifies the extraction of values from object
+        // or arrays into individual variables.
+        
+        const person ={Name:"Saro",Age:21};
+
+        const {Name,Age}=person;
+        console.log("Name:",Name ,"Age:" ,Age)
+
+        // 4.Spread Operator
+
+        // The spread operator allows for the expnsion of elements ,
+        // marking it handly for creating new array or objects based on existing ones.
+        
+        const number =[1,2,3,4,5]
+        const newNumbrs =[...number,6,7,8,9,10]
+        console.log ( newNumbrs)
+
+        // 5.Rest Parameter
+        const sum = (...numbers)=>{
+            return numbers.map(number=>number*2)
+        }
+         console.log(sum(1,2,3,4,5))
+
+
+        //  6.Default parametrs
+
+        const func =(name = "Saro") =>{
+            return `Hello ,${name}!`;
+        }
+            console.log(func())
+
+            console.log(func("Saravanan"))
+        
+    // 7.map Methods
+    const val = [1,2,3,4,5]
+    const double = val.map(num=>num*5)
+     console.log(double)
+     console.log(val)
+
+    //  8.filter Methods
+    const val1 = [1,2,3,4,5]
+    const double1 = val1.filter(num=>num%2 != 0)
+     console.log(double1)
+     console.log(val1)
+
+    //9.reduce Methods
+     
+    // The reduce method used to accumulate  the 
+    // elements of an array into a single value
+    const data =[1,2,3,4,5]
+    const sum1 = data.reduce((acc,num)=>acc + num)
+    console.log(sum1)
+
+
+
+
+
+    </script>
+ 
+</body>
+</html>

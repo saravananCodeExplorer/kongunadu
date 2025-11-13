@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>isysway</title>
+</head>
+<body>
+ 
+	<script>
+let user = {
+  name: "sathana",
+  age: 35,
+  city: "Trichy",
+  contact: "9043017656",
+};
+
+let arr_keys=Object.keys(user);
+document.write("keys are  "+arr_keys);
+
+let arr_values=Object.values(user);
+console.table(arr_values);
+
+for(let i=0;i<arr_keys.length;i++)
+{
+  console.log(arr_keys[i]+" : "+arr_values[i]);
+  //console.log(user[arr_keys[i]]);
+}
+</script>
+</body>
+</html>

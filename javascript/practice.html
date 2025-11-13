@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data with Async/Await</title>
+</head>
+<body>
+    <h1>How to fetch the data from API in our application</h1>
+
+    <ul class="container"></ul>
+
+    <script>
+        const container = document.querySelector('.container');
+
+  
+        async function fetchData() {
+            const url = 'https://dummyjson.com/products';
+            
+            try {
+                const response = await fetch(url); 
+                const data = await response.json(); 
+                console.log(data); 
+
+                
+                container.innerHTML = `
+                  <li>Example Data: ${JSON.stringify(data)}</li>
+                `;
+            } catch (err) {
+                console.error('Error fetching data:', err);
+                container.innerHTML = `<li>Error fetching data: ${err.message}</li>`;
+            }
+        }
+
+        // Call the function
+        fetchData();
+    </script>
+</body>
+</html> 

@@ -1,0 +1,33 @@
+.para1{
+    background-color: red;
+
+}
+.para2{
+    background-color: blue;
+}
+.para3{
+    background-color: brown;
+}
+
+
+@media screen and  (max-width:500px){
+    .container p{
+        font-size: 10px;
+        background-color: chartreuse;
+        color: white;
+    }
+}
+
+
+ @media screen  and (min-width:600px){
+    .container p{
+        background-color: brown;
+    }
+}
+
+@media print {
+    .container p{
+        color:red;
+    }
+ }
+     

@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function hello()
+{
+ if(document.f1.txtuser.value=="")
+  {
+   alert("plz enter ur name");
+   document.f1.txtuser.focus();
+  }
+ else
+ {
+  alert("Welcome to" +"  "+ document.f1.txtuser.value);
+ }
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<table id="table1" align="center" bgcolor="#ffccoo">
+<tr>
+<td>
+Enter your name:
+</td>
+<td>
+<input type="text" name="txtuser">
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="button" value="validate" name="b1" onclick="hello()">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

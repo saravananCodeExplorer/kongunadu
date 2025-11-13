@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <link rel="stylesheet" href="transn.css">
+</head>
+<style>
+
+    h1{
+        text-align: center;
+        background-color: slateblue;
+        color: black;
+       
+    }
+    h1:hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        color: slateblue;
+        }
+    
+    .box{
+        height: 200px;
+        width: 200px;
+        transition-timing-function: ease-in;
+        background-color: black;
+        transition-duration: 3s;
+    }
+
+    .box:hover{
+        background-color: darksalmon;
+        border-radius: 50px;
+        transform: scale(0.8); 
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    </style>
+<body>
+    <h1>helloo</h1>
+    <div class="container">
+    <div class="box">hiiiiiii</div>
+    <br>
+    <div class="box">helloo</div>
+    <br>
+    <div class="box">deepika</div>
+    <br>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .square{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: blueviolet;
+     /* border-radius: 50%;  */
+    animation-name: square;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    /* animation-delay: 2s; */
+   animation-iteration-count: 2; 
+   animation-direction: alternate-reverse;
+     animation-fill-mode:backwards; 
+ } 
+  
+  @keyframes square {
+    0%{
+        top: 0px;
+        left: 0px;
+        /* transform: rotate(0deg); */
+
+    }
+    25%{
+        left: 200px;
+        top: 0px;
+        /* transform: rotate(360deg); */
+
+    }
+    50%{
+        left: 400px;
+        top: 0px;
+        /* transform: scale(0.7); */
+
+    }
+    75%{
+        left: 600px;
+        top: 0px;
+        background-color: blue;
+
+    }
+    100%{
+        left: 800px;
+        top: 0px;
+
+
+    }
+  }
+</style>
+<body>
+       <div class="square"> 
+ 
+        <!-- animation -->
+    </div>
+</body>
+</html>

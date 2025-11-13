@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let playGame=confirm("Shall we play rock,paper,scissors.?");
+
+        if (playGame){
+            let playerChoice=prompt("enter rock,paper or scissors");
+
+            if(playerChoice){
+               let playerOne =playerChoice.trim().toLowerCase();
+
+               if(playerOne==="rock"|| playerOne==="paper" || playerOne==="scissors"){
+                let computerChoice = (Math.random()*4);
+                console.log(Math.floor(computerChoice))
+
+                let computer=
+                computerChoice===1 ? "rock":
+                computerChoice===2 ? "paper":
+                "scissors";
+
+                let result = 
+
+      playerOne === computer ? "Tie Game":
+
+      playerOne === "rock" && computer==="paper" ?
+
+     `playerOne:${playerOne}\n computer:${computer}\n Player Wins!:`:
+
+      playerOne === "paper" && computer === "scissors" ?
+      `playerOne: ${playerOne}\n computer:${computer}\n Player Wins!:`:
+
+      playerOne === "scissors" && computer === "rock" ?
+      `playerOne:${playerOne}\n computer:${computer}\n Player Wins!:`:
+
+      `playerOne:${playerOne}\n computer:${computer}\n Compuer is Wins!:`
+
+         alert(result);
+      let PlayAgain = confirm("Play Again?");
+      PlayAgain ? location.reload():
+      alert("Thanks for playing");
+                 }
+                 else{
+                     alert("You didn' enter rock,paper,scissors .")
+      
+                           let PlayCrt = confirm("You have a Chance:");
+                         PlayCrt ? location.reload():alert(" Thanks for playing.")
+                 }
+
+    
+                   }
+            
+            
+             
+            
+            
+            
+
+               else{
+                alert("maybe next time.")
+               }
+
+
+        }
+        else{
+            alert("lets play soon.Byeee")
+
+        }
+    </script>
+</body>
+</html>

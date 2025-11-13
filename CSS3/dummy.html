@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in css</title>
+
+</head>
+<style>
+  
+ p{  
+    background-color: blue; 
+    color: white;
+    border: 3px solid black;
+     padding: 5px;
+     height: 100px;
+     /* width: 200px; */
+     overflow:hidden;
+
+  } 
+.container{ 
+    min-height: 1000px;
+    background-color: aqua;
+     
+    display: grid;  
+    /* grid-template-columns: 30% 30% 30%; */
+    justify-content: space-evenly;
+    align-items:center; 
+ 
+
+    /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+    /* grid-template-columns: 300px 1fr 1fr ; */
+    /* grid-template-columns: 300px 300px 300px; */
+     /* column-gap: 20px; */
+    /* row-gap: 50px;  */
+       gap: 20px;
+    /* grid-template-columns: 300px 200px  auto; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: minmax(300px,1fr) 1fr 1fr; */
+    /* grid-template-columns: repeat(2,minmax(300px,1fr) ); */
+    /* grid-template-columns: re                                                                                                                                                     peat(auto-fit,minmax(200px,1fr)); */
+    grid-template-columns: repeat(auto-fill,minmax(200px ,1fr));
+
+ 
+  }   
+
+ 
+</style>
+<body>
+  
+
+
+    <div class="container">
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maiores quaerat velit ea voluptatibus officiis, dolore ipsa assumenda libero quis atque, vel consequatur illo repellendus porro molestias hic earum necessitatibus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla dolor praesentium voluptates placeat odio ex, tempora, inventore dolorem reprehenderit voluptatibus nesciunt eligendi corrupti, perspiciatis aut. Distinctio pariatur tempore est.</p>  
+    
+    
+    </div>
+</body>
+</html>

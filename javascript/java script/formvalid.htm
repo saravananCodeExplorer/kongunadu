@@ -1,0 +1,134 @@
+
+<?php
+$con=new mysqli("localhost","root","","phpcrud");
+if(!$con)
+{
+	die('error in database'.mysqli_error($con));
+}
+if(isset($_POST['submit']))
+{
+	$Name=$_POST['name'];
+	$Password=$_POST['password'];
+	$con_password=$_POST['con_password'];
+	$Email=$_POST['email'];
+
+	$query="INSERT INTO `register`(`name`, `password`, `con_password`,`email`) 
+	VALUES ('$Name','$Password','$con_password','$Email')";
+	$res=mysqli_query($con,$query);
+	if($res)
+	{
+		echo "register successfully";
+	}
+	else
+	{
+		echo mysqli_error($d);
+	}
+
+?>
+
+
+
+<html>
+<head>
+<title>Form valid </title>
+<style>
+table,th,td{
+border-collapse:collapse;
+margin:10px;
+padding:20px;
+}
+.button{
+padding:10px;
+border:none;
+background-color:#FAEBD7;
+}
+</style>
+<script language="javascript">
+function onsubmit_validation()
+{
+ if(document.form1.name.value=="")
+    {
+        alert ( "Please fill ur name.");
+        document.form1.name.focus();
+        return false;
+    }
+ if(document.form1.password.value =="")
+    {
+        alert ( "enter the password");
+        document.form1.password.focus();
+        return false;
+    }
+if(document.form1.con_password.value=="")
+    {
+        alert ( "enter the re-enter password");
+        document.form1.con_password.focus();
+        return false;
+    }
+if((document.form1.password.value) != (document.form1.con_password.value))
+    {
+        alert ("re-enter password are not same");
+        document.form1.pass2.focus();
+        return false;
+    }
+   
+ var emailExp=/^[\w\-\.\+\!]+\@[a-zA-Z0-9\.\-]+\.[\w\-\.]{2,3}$/;  
+ 
+   if(document.form1.email.value.match(emailExp))
+    {
+   
+    }  
+   else   
+   {
+   alert("plz enter valid email address");
+   return false;
+   }
+   alert("Form valid");
+   return true;
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<h2><center>User Form</center></h2>
+<table align="center" bgcolor="#ffee99" border="1" width="400" height="400">
+<tr>
+<td>
+Enter ur name :
+</td>
+<td>
+<input type="text" name="name">
+</tr>
+<tr>
+<td>
+Enter ur Password :
+</td>
+<td>
+<input type="password" name="password">
+</tr>
+<tr>
+<td>
+Re-Enter ur Password :
+</td>
+<td>
+<input type="password" name="con_password">
+</tr>
+
+<tr>
+<td>
+E-Mail Address : 
+</td>
+<td>
+<input type="text" name="email">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="button" class="button" name="s1" value="Submit" onclick="onsubmit_validation()">
+<input type="Reset" class="button" name="r1" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

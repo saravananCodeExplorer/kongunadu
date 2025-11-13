@@ -1,0 +1,31 @@
+
+div h1{
+    background-color: aqua;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+   font-weight: bold;
+   font-style: italic;
+   font-variant: small-caps;
+   text-shadow: 10px 10px 2px red;
+   
+}
+
+div h2{
+    color: red;
+    text-align: center;
+    /* text-transform: capitalize; */
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+
+}
+div p{
+    text-indent: 50px;
+    text-align: justify;
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    text-decoration: none;
+    
+
+
+}

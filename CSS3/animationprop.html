@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation properties</title>
+    
+</head>
+<style>
+    body{
+        background-color: lavenderblush;
+        cursor:grabbing;
+    }
+    h1{
+        text-align: center;
+        color: bisque;
+       
+    }
+    
+
+        .square{
+            width: 250px;
+            height: 250px;
+            position: relative;
+            background-color: lightblue;
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+        @keyframes animation{
+            0%{
+                left: 0px;
+                top: 0px;
+                box-shadow: 50px;
+                
+            }
+            25%{
+                left: 300px;
+                top: 300px;
+                background-color: burlywood;
+                
+            }
+            50%{
+                left: 300px;
+                top: 300px;
+                background-image: url(./img/nature.jpeg);
+            }
+            75%{
+                left: 0px;
+                top: 300px;
+                border-radius: 100px;
+            
+                background-image: url('./img/forest.jpg')
+                
+                
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                background-blend-mode: soft-light;
+                background-color: green;
+
+
+
+            }
+        }
+    </style>
+<body>
+    <div class="square">
+        <h1>Hello.</h1>
+
+    </div>
+    
+    
+</body>
+</html>

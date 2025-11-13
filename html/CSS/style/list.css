@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none; /* No markers for unordered lists */
+}
+
+ul li {
+    /* Uncomment one of the following list-style-types as needed */
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    /* list-style-type: lower-alpha; */
+    /* list-style-type: upper-alpha; */
+    /* list-style-type: lower-roman; */
+    /* list-style-type: upper-roman; */
+    
+    /* Uncomment to change text color */
+    /* color: aqua; */
+    
+    /* Uncomment to use a custom marker */
+    /* list-style: square inside url("../img/tick.avif"); */
+}
+
+ol {
+    list-style-position: inside; /* Marker will be inside the content flow */
+}
+
+ol li {
+    list-style-image: url("../img/car.svg"); /* Custom marker for ordered list items */
+}
+
+/* Uncomment to set a background color for the body */
+ /* body {
+    background-color: blueviolet;
+} */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate OTP</title>
+</head>
+<style>
+
+        body {
+            background-color: black;
+            color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    input {
+        padding: 10px;
+        font-size: 16px;
+        width: 150px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+</style>
+<body>
+    <h1>Generate OTP</h1>
+    <input type="text" id="OTP"/>
+        <script>
+            function generateOTP(limit) {
+        
+            let digits = '0123456789';
+            let OTP = '';
+            let result = '';
+            for (let i = 0; i < limit; i++ ) {
+                OTP += digits[(Math.random() * 10)];
+                console.log(OTP)
+                
+            
+            }
+            document.getElementById('OTP').value = OTP;
+            document.write("<br><br>");
+        return OTP;
+        }"<br>"
+        
+        document.write("Random Number Generator!", generateOTP(5) );
+
+      
+
+        </script>
+</body>
+</html>

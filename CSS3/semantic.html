@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semantic Layout Example</title>
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* Page grid */
+    body {
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* header / content / footer */
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 16px;
+      background:#f7f7f7;
+    }
+
+    header, nav, main, aside, article, footer {
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    }
+
+    /* Main area split into navigation + content on wider screens */
+    .layout {
+      display: grid;
+      grid-template-columns: 240px 1fr; /* nav | main content */
+      gap: 16px;
+    }
+
+    nav ul { list-style: none; }
+    nav a { display:block; padding:8px 10px; text-decoration:none; color:#222; border-radius:6px; }
+    nav a:hover { background:#f0f0f0; }
+
+    main { display: grid; grid-template-columns: 1fr 300px; gap: 16px; align-items:start; }
+    article { min-height: 200px; }
+    aside { background:#fcfcfc; }
+
+ 
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;">Skip to content</a>
+
+  <header role="banner">
+    <h1>Site Title</h1>
+    <p>Short tagline or description.</p>
+  </header>
+
+  <div class="layout" >
+    <nav role="navigation" aria-label="Primary navigation">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content" role="main" aria-label="Main content">
+      <article>
+        <header>
+          <h2>Article Title</h2>
+          <p>By Author • Date</p>
+        </header>
+
+        <section>
+          <h3>Home</h3>
+          <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maxime dolorum quasi facere ut! Quas, sunt ad libero numquam eum odit sint illo nesciunt nobis recusandae. Sit doloribus exercitationem consequatur, dolore, tempore molestiae nesciunt pariatur repellat quae possimus, minus totam. Natus beatae, harum nemo, dolor quas doloribus hic a earum est laudantium, commodi facere incidunt. Ipsam, et! Enim nihil rem magnam libero error maiores odit sint neque consequatur ex esse recusandae, ullam nulla sapiente sequi! Quis libero corporis maiores nesciunt ipsum saepe praesentium eaque veritatis error a pariatur asperiores facilis repellendus sint minus tempore magnam nobis dolor animi, reprehenderit amet?
+          </article>
+          <p>Intro paragraph for this section. Use semantic sections to group topics within an article.</p>
+          <p>More content — images, lists, code samples, forms, etc., belong here.</p>
+        </section>
+
+        <section>
+          <h3>Another section</h3>
+          <p>Additional content in a separate section.</p>
+        </section>
+
+        <footer>
+          <p>Article footer — tags, related links, or meta info.</p>
+        </footer>
+      </article>
+
+      <aside role="complementary" aria-label="Related">
+        <h2>Related</h2>
+        <p>Short related links, ads, or widgets. This complements the main article.</p>
+      </aside>
+    </main>
+  </div>
+
+  <footer role="contentinfo">
+
+    <p>© 2025 Your Name — <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+
+  <figure>
+  <img src="./img/bg.jpg" alt="Beautiful mountain view" width="400">
+  <figcaption>A peaceful mountain landscape at sunrise.</figcaption>
+</figure>
+
+
+</body>
+</html>

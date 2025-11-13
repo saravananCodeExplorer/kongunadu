@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contional statements</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <script> 
+        //if
+
+    let num = parseInt( prompt("Enter the Number"))
+    if (num > 0) {
+        console.log("The number is positive.\n");
+    }
+    
+    // if else
+
+    let  x =20;
+    if(x>10){
+        console.log("yes")
+
+    }
+    else{
+        console.log("condition is false")
+    }
+  
+
+      //leap year
+
+      let year =  prompt("Enter the year")
+   if((year%4==0 || year%100 !=0) && year%4 ==0){
+    alert("This is leep year")
+   }
+   else{
+    alert("this is not leep")
+   }
+
+
+   
+ 
+      let store = prompt("Enter a number");
+        if( (store == null) ){
+            alert("Sorry pleace re enter")
+         
+        }
+     else if(store % 2==0){
+          alert("this is even number")
+     }
+    else{
+      alert("this is odd numbers")
+      let reEntry = confirm("Again Chech")
+      reEntry ? location.reload():alert("I guess change your mind thank you:)")
+     }
+
+
+   // else if
+// calculater using nested else if
+
+let a;
+let b;
+let select;
+
+select = prompt("Select operations from + - * % /:");
+
+a = parseFloat(prompt("Enter the a value:"));
+b = parseFloat(prompt("Enter the b value:"));
+
+if (select === '+') {
+    console.log(a + b);
+} else if (select === '-') {
+    console.log(a - b);
+} else if (select === '*') {
+    console.log(a * b);
+} else if (select === '/') {
+      console.log(a/b)
+} else if (select === '%') {
+    console.log(a % b);
+} else {
+    console.log("Invalid input");
+}
+
+// nested if
+let age = prompt("Enter your age:");
+
+    let hasLicense = confirm("You have a License.?"); // 1 for true, 0 for false
+
+    if (age >= 18) {
+        if (hasLicense) {
+            alert("You can drive.\n");
+        } else {
+            alert("You need a license to drive.\n");
+        }
+    } else {
+        alert("You are too young to drive.\n");
+    }
+
+
+    let number = 25;
+
+if (number > 0) {
+
+    if (number < 50) {
+        console.log("Number is between 1 and 50.\n");
+    } else {
+        console.log("Number is 50 or greater.\n");
+    }
+} 
+
+else {
+    console.log("Number is 0 or negative.\n");
+}
+
+
+// Input the score
+score = parseInt(prompt("Enter the score: "));
+
+// Check the score and determine the grade
+
+if(score <=0 || score>=101){
+console.log("wrong value")
+}
+else if (score >= 90) {
+    if (score >= 95) {
+        console.log("Grade: A+");
+    } else {
+        console.log("Grade: A");
+    }
+} else if (score >= 80 ) {
+    if (score >= 85) {
+        console.log("Grade: B+");
+    } else {
+        console.log("Grade: B");
+    }
+} else if (score >= 70) {
+    if (score >= 75) {
+        console.log("Grade: C+");
+    } else {
+        console.log("Grade: C");
+    }
+} else if (score >= 60) {
+    if (score >= 65) {
+        console.log("Grade: D+");
+    } else {
+        console.log("Grade: D");
+    }
+} else if(score >= 50){
+    console.log("Grade: F");
+}else{
+    console.log("you have failed")
+}
+
+
+// switch case.1
+
+// let day = 1;
+let day = parseInt(prompt ("Enter the day:"))
+      switch (day) {
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wednesday");
+            break;
+        case 4:
+            console.log("Thursday");
+            break;
+        case 5:
+            console.log("Friday");
+            break;
+        case 6:
+            console.log("Saturday");
+            break;
+        case 7:
+            console.log("Sunday");
+            break;
+        default:
+            console.log("Invalid day");
+    }
+
+    // switch case 2
+    let grade = 'C';
+    // let grade = prompt("Enter the grade")
+
+switch (grade) {
+    case 'A':
+        console.log("Excellent");
+        break;
+    case 'B':
+        console.log("Good");
+         break;
+    case 'C':
+        console.log("Fair");
+        break;
+    case 'D':
+        console.log("Poor");
+        break;
+    case 'F':
+        console.log("Fail");
+        break;
+    default:
+        console.log("Invalid grade");
+        break;
+}
+
+
+// switch case 3
+let category = 'c'
+let subcategory =8
+// let category = prompt("Enter the category:")
+
+    // let subcategory = parseInt(prompt("Enter the sub category"));
+
+
+    switch (category) {
+        case 'A':
+            switch (subcategory) {
+                case 1:
+                    console.log("Category A, Subcategory 1");
+                    break;
+                case 2:
+                console.log("Category A, Subcategory 2");
+                    break;
+                default:
+                console.log("Category A, Unknown Subcategory");
+            }
+            break;
+        case 'B':
+            switch (subcategory) {
+                case 1:
+                console.log("Category B, Subcategory 1");
+                    break;
+                case 2:
+                console.log("Category B, Subcategory 2");
+                    break;
+                default:
+                console.log("Category B, Unknown Subcategory");
+            }
+            break;
+        default:
+            printf("Unknown Category");
+
+}
+
+
+    </script>
+</body>
+</html>

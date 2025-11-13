@@ -1,0 +1,31 @@
+/* .para1{
+    color: blue;
+    background-color: rgb(238, 152, 22);
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 40px;
+    letter-spacing: 5px;
+    line-height: 0.9;
+    word-spacing: 20px;
+    text-shadow: 2px 2px red;
+    
+    
+}
+*/
+img{
+    /* transition: 2s; */
+    transition-duration: 2s;
+    /* transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); */
+    /* transition-timing-function:} */
+}
+img:hover{
+    transform: scale(1.9);
+    cursor: pointer;
+}
+/* ul {
+     /* list-style-position:outside; */
+    
+ /* list-style-type: none;    */
+    /* list-style-position: inside; */
+    /* list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8mVpojVJkfUpgqWJozXpsaUJf19/rj6fL5+vxFbafU3OksWpozX5zp7vXe5e85ZaPDz+ISTJVCa6Z1kbykt9JNcqixwdlui7fv8veesM5lhrfN2OeTqcy5yNy2xdwARpJXeq9+msBzkLqIoMRyj7pRd65afK5rCzfJAAADJklEQVR4nO3bW3OqMBSGYQmgiKEcBA8cpEWr//8f7oCgaLvvyjDJvM+tN+ubJGslji4WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AMfx7krmJaXF+XcNUwprIIonruIKZ12SXSau4gJealcRgZv0XW8S5Z+PXcZE8ojYcvsY+4yJuOln0Jss3DuOiYTFpawg7xcz13IVMKrLYTMS2NnfezbliWrjbEBT5FtiaQqje0ydaACWunG2EMYq4CWfYhjU/doHLUBv061qQE3bZOxo/1+M3clE+m6qIiqzNRDGG9VQMtustNq7lKm4fldwCI39ToaX7uAfpXXZu7RcCusVppVZl64y26LCqfYN2b20c230y6h2GXn/dy1TCLcyXaHqgfFuTKyj6ox0R1CWTVnI7tM2c1Bdd9umpuRXaa7i6qA4nzZGdll4ug+JqziEhnZZfotalnXc5SZeAg3u+U9oLwGlYkBw2u/gtINzibOiY/ivoJCuk6j7aO3zOr/vhXSfgUdV950XcFVkySJc/k14+qSdG1UOK570PbFtG/vm0Kkv61QJsWwgvoOwuPXfZovi59rFNtDQDfSNuAivJ8zS9jpe8TuW6d7G91qPOnjZIhoHV4/+SjEENDR+T1R9fNcRfx8GQfros/uBPI8W3l/IH0kVFmq0QfZ8tFl9H5PHEYJxfJ53IY2qvaovm20cxkltMSjZZbPgLq/J+JEjCLa/Vj0bvc22o76XPPr9qoaHkf3U9ct2PH7eVlrNG6jvbBxRovoq6m4vgyhpetr3WV660vyjLhM14v8GTDQ/BD2vGh0Fp18H4jHJDzov0c7ezmO6AwBXTfQe1A8rZrxVOwDqkevbOau7M94/rih9gED98uUJVROgXiPqJ5MJv10VO1T8b6EL9dU/a0PL/u0+95C22+efrcZj4y2j+6M+3FsPY6o9qhJh7BXJ6Ml1PvV+z/Xx1SU7sGE++gP9XAFd+TNsC7TOw791Fma+h+Djd9ORaEeGIZcuH8qfdu2hWXSbe2dt8+zk7m/3wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaOwfqnwh8InEQJEAAAAASUVORK5CYII="); */

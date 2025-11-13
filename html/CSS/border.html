@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border properties</title>
+</head>
+<style>
+    *{
+        text-align: center;
+    }
+    h1{
+        border: 5px dotted black;
+    }
+    #dash{
+        border: 5px dashed red;
+    }
+    #solid{
+        border: 5px solid green;
+    }
+    #double{
+        border: 5px double yellow;
+    }
+    #insert{
+        border: 5px inset black;
+    }
+    #outset{
+        border:5px outset rgb(214, 11, 11)
+    }
+    #groove{
+        border: 5px groove rgb(255, 69, 69)
+    }
+    #ridge{
+        border: 5px ridge rgb(128, 2, 2)
+    }
+    #hidden{
+        border: hidden;
+    }
+    #none{
+        border: none;
+    }
+  .unique{
+    height: 100px;
+    width: 100%;
+    border-top-style:solid ;
+    border-right-style: dotted;
+    border-bottom-style:dashed ;
+    border-left-style:double ;
+  }
+  .common{
+    height: 120px;
+    width: 100%;
+    border-style: solid dotted double dotted;
+  }
+  .double{
+    border-style: solid dotted;
+  }
+</style>
+<body>
+    <h2>Border properties:</h2>
+    <!-- Border properties -->
+    <!-- border width style color -->
+    <div id="">
+        <h1 id="dotted"> border: 5px dotted black;</h1>
+        <h1 id="dash">  border: 5px dashed red;</h1>
+        <h1 id="solid">border: 5px solid green;</h1>
+        <h1 id="double">border: 5px double yellow;</h1>
+        <h1 id="insert"> border: 5px inset black;</h1>
+        <h1 id="outset"> border: 5px outset black;</h1>
+        <h1 id="groove"> border: 5px groove black;</h1>
+        <h1 id="ridge"> border: 5px ridge black;</h1>
+        <h1 id="hidden"> border: 5px hidden black;</h1>
+        <h1 id="none"> border: none;</h1>
+    </div>
+
+    <!-- border unique styles -->
+    <div class="unique"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste repellat ipsa impedit rem et qui iusto minus nesciunt, nemo in vel rerum cumque ullam voluptatibus quam illo nobis voluptate esse, natus similique. Mollitia quisquam repellendus minus, corporis magni cumque. Sequi aperiam est quae maiores voluptate nihil corporis fugiat eius itaque? Illum ipsum ullam hic nemo eaque quos, possimus minima deleniti assumenda? Itaque reiciendis soluta exercitationem consequuntur natus quod illo, architecto deserunt est, sed nesciunt rem saepe commodi omnis, recusandae neque eaque laboriosam. In doloribus obcaecati tenetur quisquam repellat, repellendus cumque quibusdam vitae suscipit totam, dolores, dignissimos sapiente aliquam ea ex!</p></div><br><br>
+    
+    <div class="common"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque deleniti nihil voluptatum quas. Doloribus cumque sed vero exercitationem, consequatur ullam dolorum repellat tenetur ratione deserunt ipsam debitis numquam hic illum iusto. Et tempora impedit unde, illo aperiam veniam? Consequatur necessitatibus labore dignissimos velit distinctio culpa neque minima! Consequuntur, ullam repellat sequi amet vitae illum aspernatur ipsam provident, exercitationem possimus eligendi perferendis facilis ad corporis nemo, aperiam est dolores asperiores voluptatum quos earum accusantium. Quos voluptatibus optio deleniti delectus necessitatibus perspiciatis id perferendis aliquam ipsa, maxime soluta cupiditate qui eos officia neque eligendi veniam exercitationem. Ab nesciunt sapiente suscipit corporis.</p></div>
+
+   <br><br> <div class="double">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga nihil aut iste nesciunt, minus dolores ad fugiat perspiciatis laborum, minima recusandae debitis placeat consequuntur veniam commodi quos totam eveniet.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Display</title>
+</head>
+<style>
+  #output1{
+    color: green;
+  }
+</style>
+<body>
+  <form name="f1">
+    <label>Enter a Number: </label>
+    <input type="text" name="t1" />
+    <button type="button" 
+    onclick="clickMe()">Submit</button>
+  </form>
+  <div id="output1"></div>
+
+  <script>
+    const clickMe = () => {
+   
+      let enterNumber = document.f1.t1.value;
+
+  
+      if (isNaN(enterNumber) || enterNumber <= 0) {
+        document.getElementById('output1').innerHTML = "Please enter a valid positive number!";
+        // document.getElementById('output1').style.color="red"
+       
+      }
+
+      let outputString = ""; 
+
+    
+      for (let i = 1; i <= enterNumber; i++) {
+        outputString += i + " "; 
+      }
+
+      document.getElementById('output1').innerHTML = outputString;
+    }
+  </script>
+</body>
+</html> 

@@ -1,0 +1,63 @@
+/*1. element selector */
+h2{
+    font-size: 32px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+/* 2.class selector */
+
+.para3{
+    background-color: blueviolet;
+    color: white;
+}
+.para1{
+    background-color: blue;
+    color: white;
+}
+/* id selecter */
+#head1{
+    font-size: 40px;
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+}
+/* universal selector */
+
+*{
+    background-color: chartreuse;
+    font-size: 50px;
+}
+
+/* Descendent selector */
+.car-div {
+    border: 2px solid black;
+}
+.car-div img{
+    height: 400px;
+    width: 400px;
+}
+img{
+    height: 100px;
+    height: 100px;
+}
+
+/* child selecter */
+.car-div > h3{
+    font-size: 20px;
+}
+
+/* attribute selecter */
+input[type='password']{
+    background-color: brown;
+    font-size: 20px;
+    color: white;
+}
+
+/* grouping selecter */
+h4,span,b,p{
+    border: 2px solid yellow;
+    font-size: 10px;
+    
+}

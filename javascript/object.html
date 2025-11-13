@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in js</title>
+  
+ 
+</head>
+<body style="background-color: black; color: white; text-align: center; margin-top: 200px;"></body>
+<h1>Object
+     Manipulation in js</h1>
+    <script>
+        //1. Object Manipulation in js
+
+      
+        const person={
+            firstName:"Saran",
+            lastName:"S",
+            age:25
+            
+        } 
+        console.log(typeof(person))
+        document.write(JSON.stringify( person))
+    console.log(( person))
+// //         //2. Acessing Object Properties
+        console.log(person.firstName);
+    
+        console.log(person.lastName);
+        console.log(person['age'])
+        
+//      //3.Modifing Object Properties
+
+        person["age"]=24
+
+        person["lastName"]="kamal";
+
+        console.log(person.age)
+        console.log(person["lastName"])
+
+
+// //          //4.Adding new properties
+        person.email="saravanansekar434@gmail.com"
+        person['contact'] = 1234567890;
+        
+        console.log(person["email"])
+        console.log(person.contact)
+
+// //          //5.Deleting Properties
+        delete person.age;
+        console.log(person.age)
+        console.log(person)
+
+
+// //         //6.Checking if a Properties Exists
+
+        if("lastName" in person){
+            console.log(" properties exists.");    
+        }
+        else{
+            console.log("NO");
+        }
+       
+// //          //object Methods
+
+         const car ={
+              make:"TOYOTA",
+            model:"INNOVA",
+            start () {
+                console.log("Engine started")
+            },
+            stop (){
+                console.log("Engine stopped");
+            }
+
+        }
+      
+
+   car.start();
+   car.stop();
+
+
+
+
+// //     //Looping Thorugh Object properties
+      
+   for(const key in person){
+    console.log(`${key}: ${person[key]}`);
+
+
+    }
+
+// //     //using object.keys
+    const keys = Object.keys(person);
+
+    for(const key of keys){
+        console.log(`${key}:${person[key]}`)
+      
+    }
+// // //    Object Destructuring
+   const {firstName ,lastName,email,contact,age} = person;
+   console.log(firstName)
+   console.log(lastName)
+   console.log(age)
+
+// console.log(person.email)
+
+//    person.firstName = "sameer"
+//    console.log(person.firstName)
+
+
+</script>
+</body>
+</html>

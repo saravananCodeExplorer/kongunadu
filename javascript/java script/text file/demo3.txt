@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript">
+function add()
+{
+var a,b,c;
+a=parseInt(document.f1.t1.value);
+b=parseInt(document.f1.t2.value);
+c=a+b;
+alert("Total is" +c);
+document.f1.t3.value=c;
+}
+
+function clears()
+{
+document.f1.t1.value=null;
+document.f1.t2.value=null;
+document.f1.t3.value=null;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<table name="table1"  bgcolor="#cecef9" align="center">
+<tr>
+<td>
+Enter no1
+</td>
+<td>
+<input type="text" name="t1">
+</td>
+</tr>
+<tr>
+<td>
+Enter no2
+</td>
+<td>
+<input type="text" name="t2">
+</td>
+</tr>
+<tr>
+<td><label>reuslt</label>
+<td><input type="text" name="t3"></td></tr>
+<td>
+</td>
+<td>
+<input type="button" name="b1" value="Add"  onclick="add()">
+<input type="button" name="r1" value="Clear" onclick="clears()">
+</td>
+</tr>
+</form>
+</body>
+</html>

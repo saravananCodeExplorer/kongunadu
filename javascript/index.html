@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript course</title>
+    <!-- external js -->
+    <script src="jsfile/index.js"></script>
+    <style>
+      #box{
+        background-color: blue;
+        height: 300px;
+
+      }
+
+      .square{
+        background-color: chartreuse;
+        height: 200px;
+      }
+    </style>
+
+</head>
+<body style="background-color: black; text-align: center; color:white; font-size: 30px; margin-top: 200px;">
+  <h1 style="margin-top: -200px;">Saro javascript</h1>
+
+  <div id="box"></div>
+
+  <p id="container"></p>
+
+  <div class="square" style="background-color:red;"></div>
+  <div class="square" style="background-color: green;">2</div>
+  <div class="square" style="background-color: aqua;">3</div>
+
+  <div id="qry"></div>
+
+  <div class="circle"></div>
+  <script>
+    // Internal js
+    // for examples
+    // alert("Welcome to the javascript")
+
+
+     document.getElementById("box").innerHTML ="  welcome friends!";
+     document.getElementById("container").innerHTML="isysway  Technologies:)";
+    
+
+     document.getElementsByClassName("square")[0].innerHTML="friends welcome:)" + "<br> <br>";
+     document.getElementsByClassName("square")[0].innerHTML="friends welcome:)" + "<br> <br>";
+
+    document.querySelector("#qry").innerHTML ="id querySelecter " + "<br> <br>";
+    document.querySelector(".circle").innerHTML ="class querySelecter";
+  
+
+  </script>
+</body>
+</html>

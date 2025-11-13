@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dark/Light</title>
+</head>
+
+<style>
+    h1{
+        text-align: center;
+    }
+.container{
+    border: 2px solid red;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container button{
+    font-family: sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+
+<body>
+    <h1>1.Task</h1>
+<div class="container">
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunc()">Toggle</button>
+</div>
+<script>
+myFunc = () => {
+   let item = document.getElementsByClassName('container')[0];
+   item.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>

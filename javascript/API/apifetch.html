@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .card{
+    height: 500px;
+    width: 100%;
+    border: 2px solid white;
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+  }
+  .card button{
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .card button:hover{
+    transition: 1s;
+    background-color: blue;
+    color: white;
+  }
+    
+    
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+</style>
+ 
+<body>
+  <h1>Fetch data from API</h1>
+    <div class="container">
+    
+    </div>
+
+    <script>
+      const products =  document.querySelector(".container");
+      fetch('https://fakestoreapi.com/products')
+      .then(response=>response.json())
+      .then(data=>{
+        console.log(data)
+       
+        data.forEach(product => {
+           products.innerHTML += 
+           ` <div class="card">
+           
+              
+               <img src= ${product.image} alt="err" style="height:250px;width:400px;"/>
+              <h2>${product.title}</h2>
+                <p>${product.description}</p>
+                
+                   <h3>Price$:${product.price}</h3>
+                   <button>Add to cart</button>
+               </div>`;
+        });
+        
+      })
+      .catch(error=>console.log(error))
+    </script>
+</body>
+</html>

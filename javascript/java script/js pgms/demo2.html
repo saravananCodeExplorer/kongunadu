@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>hello</title>
+<script type="text/javascript">
+function hi()
+{
+var a,b,c;
+a=25;b=30;
+c=a+b;
+//alert("Total is  " +c);
+//document.write(c);
+document.f1.t1.value=c;
+}
+function mystyle()
+{
+document.getElementById("aa").style.color="red";
+} 
+
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="t1" id="aa">
+<input type="button" value="click me"  onclick="hi()">
+<input type="button" value="add style" onclick="mystyle()">
+
+</form>
+</body>
+</html>

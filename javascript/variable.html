@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Var Const</title>
+</head>
+<body style="background-color: black; text-align: center; color:white; font-size: 30px; margin-top: 200px;">
+  <h3 style="margin-top: 200px;">Differencs between let var and const</h3>
+  
+  
+  
+  
+  
+  <script>
+    //var
+    //var is the oldest keyword to declare a variable in javascript ,
+    //var declarations are globally scopped or function/locally scoped.
+
+    var chocolate = "FIVE STAR";
+    var chocolate =10
+    // 1.Global scope
+    //2.local and function scope
+function func(){
+    var chocolate = "DAIRY MILK"
+    document.write("Local " + chocolate + "<br><br>")
+}
+document.write("Global " + chocolate + "<br><br>")
+
+func()
+
+// let
+//let is a block scoped
+// A variable declare  in a block with let is only available for use within the block.
+//let can be updated but not re-declared.
+
+    let game ="cricket";
+    
+
+function letFunc(){
+    let game = "tennis"
+    console.log("Local " + game)
+}
+      console.log("Global " + game )
+
+    letFunc()
+
+//const
+//const declaration can only be accesed within the block they were declared.
+//const cannot be updated or re-declared.
+    const number =108;
+
+function constFunc(){
+      const num  =109;
+    console.log("Local " + num)
+}
+      console.log("Global " +number )
+constFunc()
+
+    </script>
+</body>
+</html>

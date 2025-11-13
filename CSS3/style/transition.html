@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        background-color: slateblue;
+        color: black;
+        transition-duration: 3s;
+        transition-delay: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    h1:hover{
+        text-align: center;
+        background-color: black;
+        color: slateblue;
+        }
+    .box{
+        height: 200px;
+        width: 200px;
+        transition-timing-function: cubic-bezier(0.72,-0.26, 0.15, 0.99);
+        background-color: black;
+        transition-duration: 3s;
+         }
+         .box img{
+            transition-duration: 3s;
+            
+         }
+         .box:hover img{
+            /* border-radius: 50%; */
+            background-color: slateblue;
+            transform: scale(0.8); 
+            transform: rotate(180deg);
+             transform: rotateY(100deg);
+            
+            transform: translateY(-50px);
+
+
+
+
+         }
+
+
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <hr>
+    <div class="box">
+        <img src="/img/car.svg">
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    color:red;
+}
+h1{
+    background-color: aqua;
+}
+body{
+
+    /* background-image: url("../img/car.svg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    /* background-position: right top; */
+    /* background-attachment: fixed; */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+      
+    /* background-image: url("../img/car.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover; */
+    /* background: linear-gradient(303deg, rgba(2,0,36,1) 0%, rgba(9,121,66,0.340756285424326) 35%, rgba(0,212,255,1) 100%);  */
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,6,70,0.7217086663767069) 35%, rgba(0,212,255,1) 100%); 
+
+}

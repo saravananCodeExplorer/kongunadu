@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+	<script>
+      document.addEventListener("DOMContentLoaded", function() {
+	const btn = document.querySelector(".btn");
+  const btn1 = document.querySelector("#btn1");
+
+btn.addEventListener("click", function () {
+  alert("Welcome to Tutor Joes");
+}); 
+
+
+btn.addEventListener("dblclick", function () {
+  alert("Your are dblclicked");
+});
+
+btn.addEventListener("mousedown", function () {
+  this.style.backgroundColor = "Red";
+})
+btn.addEventListener("mouseout", function () {
+  this.style.backgroundColor = "yellow";
+});
+btn.addEventListener("mouseup", function () {
+  this.style.backgroundColor = "blue";
+});
+
+btn.addEventListener("mouseover", function () {
+  this.style.backgroundColor = "orange";
+});});
+</script>
+  </head>
+  <body>
+    <h3>JavaScri pt DOM Event Handlers</h3>
+    <button onclick="alert('Welcome to Tutor Joes')">Inline event</button>
+
+    <button id="btn1">Inline properties</button>
+    <button class="btn">Event</button>
+   
+  </body>
+</html>

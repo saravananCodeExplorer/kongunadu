@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px ;
+        padding: 0px;
+    }
+    h2{
+        text-align: center;
+        background-color: blue;
+        color: white;
+    }
+</style>
+<body>
+    <h2>"async and await make promises easier to write"<br>
+
+        async makes a function return a Promise <br>
+        
+        await makes a function wait for a Promise</h2>
+    
+    <script>
+        // async keyword
+        // The async keyword is used to declare a function as asynchronous.
+        // This means that the function will always return a Promise,
+        //even if you don't explicitly return one.
+        //It allows the use of await inside function. 
+    //    async function hello(){
+    //         return "Hello World!";
+    //     }
+    //     console.log(hello())
+         // The hello() function is marked async , and when you call it,it returns a Promise 
+        // hello().then((msg)=>console.log(msg))
+        //The .then() method is used to get the result once the Promise resolves 
+
+
+        //async ,await and promise
+        console.log("---------------------------------------------")
+      async function fetchData(){
+        const result = await  new Promise((resolve, reject) => {
+    
+            // if(resolve){
+            // console.log("hai")
+            // }
+            // else{
+            //     console.log("bye")
+            // }
+            setTimeout(()=>{
+                resolve("Data fetched");
+            },2000)
+
+           
+        })
+        console.log(result)
+       } 
+     
+       fetchData();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe Task</title>
+
+    
+   
+</head>
+<style>
+    table {
+        border: 2px solid black;
+        height: 650px;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: blue;
+    }
+    th, td {
+        border: 1px solid black;
+        
+    }
+    td{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: blue;
+    }
+    th {
+        height: 50px;
+    }
+    button {
+        background-color: black;
+        padding: 10px;
+        border-radius: 40px;
+        border: none;
+    }
+    button a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+</style>                                                                                                                                                       
+<body>
+    <table>
+        <tr>
+            <th><button><a href="class1.html" target="arun">Home</a></button></th>
+            <th><button><a href="class2.html" target="arun">Item Two</a></button></th>
+            <th><button><a href="form tags.html" target="arun">Item Three</a></button></th>
+            <th><button><a href="list.html" target="arun">Item Four</a></button></th>
+            <th><button><a href="marquee.html" target="arun">Item Five</a></button></th>
+        </tr>
+        <tr>
+            <td>Left side</td>
+            <td colspan="3" rowspan="2" style="background-color: chartreuse;">
+               <iframe src="" name="arun" width="100%" height="500px" frameborder="0"></iframe>
+
+            </td>
+            <td>Right side</td>
+        </tr>
+        <tr>
+            <td>Left side</td>
+            <td>Right side</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    
+    <script>
+    // const booking =  new Promise((resolve, reject) => {
+    //          bookingStatus = true
+    //          if(bookingStatus){
+    //             resolve(1000)
+    //          } 
+    //          else{
+    //             reject()
+    //          }
+    //     })
+
+
+   
+    // booking.then((amt)=>console.log(`The bus is booked amount Rs.${amt}`))
+    // .catch(()=>console.log("I am sorry "))
+
+
+
+     // function return a promise
+    // const Booking = () =>{
+    //     return new Promise((resolve, reject) => {
+    //         bookingStatus = false
+    //          if(bookingStatus){
+    //             resolve(1000)
+    //          } 
+    //          else{
+    //             reject()
+    //          }
+            
+    //     })
+    // }
+    //     Booking().then((amt)=>console.log(`The bus is booked amount Rs.${amt}`))
+    // .catch(()=>console.log("I am sorry "))
+
+
+    // 
+//     const Choice = new Promise((resolve, reject) => {
+//       const Tos =   Math.floor( Math.random()*2)
+
+//       if(Tos == 0){
+//         resolve("You are win")
+//       }
+//       else{
+//         reject("sorry! you lose")
+//       }
+    
+//    })
+//    Choice.then((message)=>console.log(message))
+//    .catch((error)=>console.log(error))
+
+
+
+// const Choice = new Promise((resolve, reject) => {
+//   const Tos = Math.floor(Math.random() * 2);
+
+//   if (Tos === 0) {
+//     resolve("You win");
+//   } else {
+//     reject("Sorry! You lose");
+//   }
+// });
+
+// const playGame = async () => {
+//   try {
+//     const message = await Choice; // Await the resolution of the promise
+//     console.log(message);        // Logs "You win" if resolved
+//   } catch (error) {
+//     console.log(error);          // Logs "Sorry! You lose" if rejected
+//   }
+// };
+
+// playGame();
+    let check =  new Promise((resolve, reject) => {
+
+      let game = false
+      if(game){
+        resolve("game is start")
+
+      }
+      else{
+        reject("game is end")
+      }
+      
+      
+     })
+     check.then((message)=>console.log(message))
+
+     .catch((err)=>console.log(err))
+
+    </script>
+</body>
+</html>

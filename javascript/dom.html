@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #output1{
+    background-color: blue;
+    color: wheat;
+  }
+  .output2{
+     background-color: red;
+    color: wheat;
+  }
+  p{
+    background-color: green;
+    color: wheat;
+  } 
+</style>
+<body>
+  <h1>javascript</h1>
+  <div id="output1"> welcome</div>
+  <div class="output2" style="background-color: aqua;">
+
+  </div>
+  <div class="output2" style="background-color: red;">
+
+  </div>
+  <div class="output2" style="background-color: blue;">
+
+  </div>
+  
+   <p> </p> 
+
+   <h1 class="head1"></h1>
+  <h1 class="head1"></h1>
+  <h1 class="head1"></h1>
+  <h1 class="head1"></h1> 
+
+<script>
+  // id
+  const data = document.getElementById("output1").innerHTML +=" hello"
+  console.log(data)
+  // const Val=  document.getElementById('output1').innerHTML
+  // console.log(Val)
+
+
+  // // class
+  document.getElementsByClassName("output2")[1].innerHTML= "getelementsbyclass"
+  // document.getElementsByClassName("output2")[0].innerHTML="hello"
+  // const Val2 = document.getElementsByClassName("output2")[0].innerHTML
+  // // alert(Val2)
+
+  // // tag
+  document.getElementsByTagName('p')[0].innerHTML="saravanan"
+  // const divs = document.getElementsByTagName("p")[0].innerHTML;
+  // console.log(divs);
+
+
+  // // qry selecter
+  const qry = document.querySelector(".head1").innerHTML="qryselecter"
+  console.log(qry)
+
+
+
+// console.log("-----------------------------------")  // 
+  const qryall = document.querySelectorAll(".head1");
+
+  qryall.forEach((h1) => {
+    h1.innerHTML = "qryselectorALL"; 
+
+  });
+  // console.log(qryall[0].innerHTML); 
+  // console.log(qryall[1].innerHTML);
+
+
+  
+</script>  
+</body>
+</html>

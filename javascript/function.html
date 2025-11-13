@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in js</title>
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <h1>javascript functions in four way</h1>
+    <script>
+        // way1
+        // Function declareation
+   
+        function func1(a,b){
+      
+           let square =a*b;
+           return square;
+           
+        }
+        
+         let a = parseInt(prompt("Enter first number:)"))
+         let b= parseInt(prompt("Enter second number:)"))
+         alert("The square number is "+func1(a,b));
+
+        // way2
+        // Function Expression
+
+        // const func2 =function(c,d){
+        //     let add = c+d;
+        //     return add;
+        // }
+        // let c = parseInt(prompt("Enter first number:)"))
+        // let d= parseInt(prompt("Enter second number:)"))
+        // console.log("The Add Number is:"+func2(c,d))
+        // func2(c,d)
+
+        // // way3
+        // // Arrow function Expression
+
+        const func3 = (e,f)=>{
+            let sub = e-f;
+            return sub;
+        }
+
+        let e = parseInt(prompt("Enter first number:)"))
+        let f= parseInt(prompt("Enter second number:)"))
+        document.write(func3(e,f))
+
+        // Way-4
+        // Concise Arrow Function Expression
+
+        // const func4 =(x,y)=>x*y;
+
+        // let x = parseInt(prompt("Enter x value:)"))
+        // let y= parseInt(prompt("Enter y value:)"))
+
+        // console.log(func4(x,y))
+
+
+    </script>
+    
+</body>
+</html>

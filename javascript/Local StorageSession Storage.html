@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local & Session Storage Example</title>
+</head>
+<body>
+  <h2>Local & Session Storage Demo</h2>
+
+  <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="saveData()">Save Data</button>
+  <button onclick="showData()">Show Data</button>
+  <button onclick="clearData()">Clear Data</button>
+
+  <p id="output"></p>
+
+  <script>
+    function saveData() {
+      let name = document.getElementById("username").value;
+
+      // Save to Local Storage
+      localStorage.setItem("localName", name);
+
+      // Save to Session Storage
+      sessionStorage.setItem("sessionName", name);
+
+      alert("Data saved successfully!");
+    }
+
+    function showData() {
+      let localData = localStorage.getItem("localName");
+      let sessionData = sessionStorage.getItem("sessionName");
+
+      document.getElementById("output").innerHTML =
+        "<b>Local Storage:</b> " + localData + "<br>" +
+        "<b>Session Storage:</b> " + sessionData;
+    }
+
+    function clearData() {
+      localStorage.clear();
+      sessionStorage.clear();
+      document.getElementById("output").innerHTML = "";
+      alert("All storage cleared!");
+    }
+  </script>
+</body>
+</html>

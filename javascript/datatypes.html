@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let num = 10
+    console.log(num)
+    console.log(typeof(num))
+
+    let str  = "sarasaradra"
+    console.log(str)
+    console.log(typeof(str))
+
+
+    // // undefined
+    let dd;
+    console.log(dd)
+    
+
+
+    //null
+    // console.log(" --------------------------")
+    // const Val = null
+    // console.log(typeof(Val))
+
+  //  const a =  prompt("enter a text")
+  //    console.log(a)
+
+  // //  console.log(typeof(a))
+ 
+
+
+  // const str1 = parseInt( prompt("enter a number"))
+  // console.log(str1)
+  // console.log(typeof(str1)) 
+
+  // boolean
+  // const B = false
+  // console.log(typeof(B))
+
+  // const store = confirm("its ok ")
+  // console.log(store)
+
+  // if(store){
+  //   console.log("ok")
+  // }
+  // else{
+  //   console.log("not ok")
+  // }
+
+
+//   // object
+
+  let person = {Name:"sara",roll:"accounts",company:"ABC"}
+    
+  console.log(person)
+document.write("The name is "+ person.Name  +" Role is  " + person.roll + "and company " + person['company'])
+
+
+//array
+
+let arr = ["a","b","c","d"]
+console.log(arr)
+console.log(typeof(arr))
+
+// 
+
+
+// function func(){
+//   console.log("function is block scope")
+//   let a = 2;
+//   console.log(a)
+
+// }
+
+
+// func()
+//  //function declaration
+// func()
+
+//  const num = prompt("enter a number")
+//     const data  = Number(num)
+//     console.log(data)
+
+
+// const num = parseInt(prompt("enter a number"))
+//     const data  = String(num)
+//     console.log(data)
+
+//  What is Symbol?
+// Symbol is a primitive data type introduced in ES6.
+// Each time you create a Symbol, it is unique, even if the descriptions are the same.
+// It's often used to create unique object property keys, to avoid name conflicts.
+const id1 = Symbol("id");
+const id2 = Symbol("id");
+
+// console.log(id1 === id2); // false — they are unique even with the same description
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+const num=[10,100,25,150,45,80,9];
+console.log("Before Sort : "+num);
+num.sort();
+console.log("After Sort : "+num);
+
+num.sort((a,b)=>{
+  return a-b;
+});
+console.log("Asc Compare Sort : "+num);
+num.sort((a,b)=>{
+  return b-a;
+});
+console.log("Desc Compare Sort : "+num);

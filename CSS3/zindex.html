@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index </title>
+<style>
+    .parent{
+        height: 400px;
+        background-color: lightgray;
+        border: 2px solid blue;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+     .child1{
+        background-color: aqua;
+         margin-left: 100px; 
+        height: 100px;
+        width: 500px;
+        z-index: 3;
+        position: absolute;
+        top: 60px;
+
+    }
+    .child2{
+        background-color:red;
+        height: 100px;
+        width: 500px;
+        z-index: 2;
+        position: absolute;
+        top: 80px;
+        margin-top: -30px;
+        margin-left: 200px;
+        
+    }
+    .child3{
+        background-color:green;
+        height: 100px;
+        width: 500px;
+        margin-top: 20px;
+        z-index: 1;
+        position: absolute;
+        top: 120px;
+        margin-left: 300px;
+        
+        
+    } 
+    h1{
+        z-index: 4;
+        position: absolute;
+        right:200px;
+    }
+</style>
+</head>
+<body>
+  
+    <div class="parent">
+      
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+    
+</body>
+</html>

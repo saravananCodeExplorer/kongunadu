@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Example</title>
+</head>
+<body>
+    <button id="myButton">Click Me!</button>
+
+    <div id="box" style="background-color: blue;color: white;height: 50px ;text-align: center;">LOOkMe</div>
+
+
+
+    <p id="text" style="background-color: blue;color: white;">Hover over me to change my text!</p>
+
+    <script>
+        // task1 click
+
+        // Get the button element
+const button = document.getElementById('myButton');
+
+// Define the event listener function
+function onButtonClick() {
+    alert('Button was clicked!');
+}
+
+
+button.addEventListener('click', onButtonClick);
+
+        // task2  dblclick
+        
+        // Get the div element
+        const box = document.getElementById('box');
+
+// Define the event listener function
+function onBoxDblClick() {
+    alert('Div was  double clicked!');
+}
+
+// Add the event listener to the div element
+box.addEventListener('dblclick', onBoxDblClick);
+
+
+
+// task3
+
+// Get the paragraph element
+const paragraph = document.getElementById('text');
+
+// Define the event listener function
+function changeText() {
+    paragraph.textContent = 'You hovered over me!';
+}
+
+// Add the event listener for the 'mouseover' event
+paragraph.addEventListener('mouseout', changeText);
+
+    </script>
+</body>
+</html>

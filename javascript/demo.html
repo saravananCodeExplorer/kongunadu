@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <div id="users">
+
+        </div>
+    
+    <script>
+     const users =  document.getElementById('users')
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then((response)=> response.json())
+        .then((data)=>{
+        console.log(data)
+    
+             data.forEach((d,index)=>{
+            users.innerHTML +=`
+                <div key=${index}>
+                    <span>indexxxxxxxx:${index}</span>
+                    <h2>ID:${d.id}</h2>
+                    <h1>name:${d.name}</h1> 
+                    <p>email:${d.email}</p>  
+                    <hr> 
+                </div>
+            `
+
+        })}
+    )
+        .catch((err)=>console.log(err))
+
+    
+        
+    </script>    
+</body>
+</html>

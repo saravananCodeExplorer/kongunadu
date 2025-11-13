@@ -1,0 +1,41 @@
+//1.for loop
+for (initialization; condition; increment/decrement) {
+    // Code to execute in each iteration
+}
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+
+//2.while loop
+
+while (condition) {
+    // Code to execute
+}
+
+
+//example
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+
+
+
+//3.do while
+
+do {
+    // Code to execute
+} while (condition);
+
+//example
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+

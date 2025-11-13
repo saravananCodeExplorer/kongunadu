@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Origin</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin-top: 200px;
+            margin-left: 500px;
+            transition: 2s;
+            transform-origin: right;
+            /* transform-origin: top; */
+            /* transform-origin: left; */
+            /* transform-origin: bottom; */
+        }
+        .box:hover{
+            cursor: pointer;
+            /* transform-origin: top; */
+            /* transform-origin: left; */
+            /* transform-origin: right; */
+            transform-origin: bottom;
+             transform: perspective(200px) rotateX(-180deg);
+             
+             transform: perspective(100px)(90px);
+            /* transition: 1s; */
+        }
+         .img{
+            margin-top: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        img{
+            height: 200px;
+            animation-name: blb;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-origin: top;
+            animation-direction: alternate;
+        }
+        @keyframes blb{
+            from{
+                transform-origin: top;
+
+                transform: scaleX(-1.0);
+
+            }
+            to{
+                 transform-origin: top; 
+                transform: scaleX(1.0);
+            }
+        } 
+
+    </style>
+</head>
+<body>
+    <h1>transform perspective</h1>
+    <div class="box">
+    </div>
+
+    <div class="img" >
+        <img src="./img/blb.jpg" alt="">
+    </div> 
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<style>
+    *{
+        font-family: monospace;
+    }
+    h1{
+        text-align: center;
+    }
+    .container{
+        height: 500px;
+        border: 2px solid black;
+        
+    }
+</style>
+<body>
+    <h1>How to fetch the data from API in our application</h1>
+
+    <ul class="container">
+
+    </ul>
+
+
+    <script>
+       const container = document.getElementsByClassName('container')[0];
+     const response =   fetch('https://dummyjson.com/users')
+       .then(response =>response.json())
+       .then(res => console.log(res))
+    //  .then(item=>document.write(JSON.stringify(item)))
+    
+   
+        .then(data => {
+                // Iterate over the users array
+                data.users.forEach(user => {
+                    container.innerHTML += `
+                        <li><strong>ID:</strong> ${user.id}</li>
+                        <li><strong>Name:</strong> ${user.firstName} ${user.lastName}</li>
+                        <li><strong>Email:</strong> ${user.email}</li>
+                        <li><strong>Phone:</strong> ${user.phone}</li>
+                        <hr />
+                    `;
+                });
+            })
+     
+     .catch(err=>console.log(err))
+    </script>
+</body>
+</html>
+
+
