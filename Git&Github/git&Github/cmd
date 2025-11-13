@@ -1,0 +1,80 @@
+                                                  Git&GitHub
+GitHub: https://github.com/
+Git (download): https://git-scm.com/downloads
+
+
+Installing on Linux
+If you’re on a Debian-based distribution, such as Ubuntu, try apt:
+
+Git cmd
+$ sudo apt install git-all
+
+
+Public Key Generation:
+
+ssh-keygen -t rsa -b 4096 -C "your mail id"
+
+To Read the Public key:
+
+cat .ssh/id_rsa.pub
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+✅ Step-by-Step Guide: Initialize Git and Push to GitHub
+
+🔧 1. Create a Local Project Folder
+
+mkdir my-project
+cd my-project
+
+
+🔁 2. Initialize Git
+   git init
+
+
+📄 3. Add Files
+
+git add .
+
+
+📝 4. Commit the Files
+git commit -m "Initial commit"
+
+
+☁️ 5. Create a Repository on GitHub
+Go to GitHub → Click "New Repository" → Give it a name → Click "Create repository".
+
+https://github.com/your-username/my-project.git
+
+
+🔗 6. Add GitHub Remote URL
+
+git remote add origin https://github.com/your-username/my-project.git
+
+🚀 7. Push to GitHub
+
+git push -u origin master
+If your default branch is main, use:
+
+✅ Done!
+Your project is now live on GitHub.
+
+git push -u origin main
+
+
+🌱 Create a New Branch
+🔁 1. Create and switch to it:
+
+git checkout -b new-branch-name
+
+
+
+\/////////////////////////
+❌ Delete a Branch
+🗑️ 1. Delete a local branch:
+
+git branch -d branch-name
+
+
+🌐 2. Delete a remote branch:
+
+git push origin --delete branch-name

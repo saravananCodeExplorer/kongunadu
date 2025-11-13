@@ -1,0 +1,6 @@
+<div class='table_bottom d-flex justify-content-around align-items-center'>
+    <a href='shop_products.php' class='bottom_btn'>Continue shopping</a>
+    <h3 class='bottom_btn fs-5 my-2'>Grand total:<span>$                                                                                                     <?php echo $grand_total?></span></h3>
+    <a href='checkout.php'class='bottom_btn' >Proceed to checkout</a>
+
+</div>

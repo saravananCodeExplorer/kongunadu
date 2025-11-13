@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <style>
+    .navbar-custom {
+      background-color: #82e251;
+    }
+    
+    .search-bar {
+     max-width: 400px;
+    }
+  
+.brand-logo {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+   .product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card h5 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.product-card button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #23527c;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Shopping with Loyalty Points</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Wishlist</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Points</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        </ul>
+      </div>
+      <button class="btn btn-outline-secondary"><a href="track.html">Track Order</a></button>
+    </div>
+  </nav>
+
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">HOME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="home.html">HOME APPLIANCE</a>
+          <a class="nav-link text-white" href="electronics.html">ELECTRONICS</a>
+          <a class="nav-link text-white" href="furniture.html">FURNITURE</a>
+          <a class="nav-link text-white" href="swing.html">SWING</a>
+        </div>
+      </div>
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search here..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit"><i class="fa fa-search">Search</i></button>
+      </form>
+      <a class="nav-link ml-3" href="#">CART - Rs. 00.00</a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-6 col-md-3 ">
+        <div class="card" style="height: 100%;width: 100%;">
+            <div class="card-header fs-6">
+              Categories
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Home Appliances</li>
+              <li class="list-group-item">Electronics</li>
+              <li class="list-group-item">Furniture</li>
+              <li class="list-group-item">Swing</li>
+            
+            </ul>
+          </div>
+    
+    
+    </div>
+    <div class="col-sm-6 col-md-9 d-flex flex-column justify-content-center">
+        <h1 class="text-center" style="font-family: cursive;">Category</h1>
+    <h2 class="text-center" style="font-family: serif;">Electronics</h2></div>
+
+
+
+    <div class="container">
+        <div class="row">
+              <div class="container-fluid">
+                <div class="row"><div class="col my-3" style="font-size: 40px;">Featured Products</div></div>
+              </div>
+             
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/asus.jpg" alt="Product 1">
+                        <h5>Asus gaming laptop</h5>
+                        <p>Rs. 13990</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/bose.jpg" alt="Product 2">
+                        <h5>Bose Speaker</h5>
+                        <p>Rs. 36990</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/dell.jpg" alt="Product 3">
+                        <h5>Dell productivity laptop</h5>
+                        <p>Rs. 10999</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/ipad.jpg" alt="Product 3">
+                        <h5>Ipad air</h5>
+                        <p>Rs. 10999</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/iphone.jpg" alt="Product 4">
+                        <h5>Iphone 14 pro max</h5>
+                        <p>Rs. 9999</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/mac.jpg" alt="Product 5">
+                        <h5>Apple Macbook pro</h5>
+                        <p>Rs. 13990</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/pixel.jpg" alt="Product 6">
+                        <h5>Google Pixel</h5>
+                        <p>Rs. 36990</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="product-card">
+                        <img src="./electronics/sony.jpg" alt="Product 3">
+                        <h5>Sony Overhead phones</h5>
+                        <p>Rs. 10999</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container my-3" ><span style="font-size: 40px; margin: 16px;">Our Brands</span>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="brand-slider" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#brand-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#brand-slider" data-slide-to="1"></li>
+                <li data-target="#brand-slider" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (1).png" alt="Лос" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (2).png" alt="BAJAJ" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (3).png" alt="BlackBerry" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (4).png" alt="Canon" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (5).png" alt="COMPRE" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (6).png" alt="DAIKIN" class="brand-logo">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- Add more brand logos here -->
+                  <div class="row">
+                    <div class="col-md-2 ">
+                      <img src="./brand/pngwing.com.png" alt="Лос" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (8).png" alt="BAJAJ" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (9).png" alt="BlackBerry" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (10).png" alt="Canon" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (11).png" alt="COMPRE" class="brand-logo">
+                    </div>
+                    <div class="col-md-2">
+                      <img src="./brand/pngwing.com (1).png" alt="DAIKIN" class="brand-logo">
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <a class="carousel-control-prev" href="#brand-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#brand-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    
