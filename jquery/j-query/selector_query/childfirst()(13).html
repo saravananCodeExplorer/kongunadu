@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>DOM Query</title>
+		<style>
+			li{
+				color:green;
+			}
+			.color{color:red;
+			}
+		</style>
+	</head>
+	<body>
+	<h3>First Child</h3>
+	<ul class='list'>
+		<li>Graphic Designing</li>
+		<li>Web Designing</li>
+		<li>Programming</li>
+		<li>
+			<h1>hai</h1>
+			<ul>
+				<li>C Program</li>
+				<li>C++ Program</li>
+				<li>Java</li>
+				<li>C#</li>
+			</ul>
+		</li>
+	</ul>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+			$("document").ready(function(){
+				$('ul.list').children('li:first-child').addClass('color');
+				// $('ul.list').children('li').first().add('li');
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#first").click(function(){
+    $("#second").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+*
+{
+box-sizing:border-box;
+}
+#first{
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+  width:500px;
+}
+
+#second {
+  
+  display: none;
+  background-image:url('img3.jpg');
+  height:300px;
+  width:500px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  object-fit:cover;
+}
+</style>
+</head>
+<body>
+ 
+<div id="first">Click to slide down image</div>
+<div id="second"></div>
+
+</body>
+</html>

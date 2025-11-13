@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Add and Remove</title>
+		<style>
+			.design{
+				background-color: blue;
+				   color:red; 
+				   font-size: 25px;   
+				   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+				}
+		</style>
+	</head>
+	<body>
+    <h3 >isysway</h3>
+    <button id='b1'>Show</button>
+    <button id='b2'>hide</button>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+			$("document").ready(function(){
+				$('#b1').click(function(){
+					$('h3').addClass('design');
+				});
+				$('#b2').click(function(){
+					$('h3').removeClass('design');
+				});
+			});
+		</script>
+	</body>
+</html>

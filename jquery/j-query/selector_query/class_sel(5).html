@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Class Selector</title>
+	</head>
+	<body>
+		<h1>isysway</h1>
+		<i class="a">Computer Languages</i> 
+		<p>Learn More Be Smart</p>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$("document").ready(function(){
+			$(".a").click(function(){
+				$(this).html("<ul><li>C</li><li>C++</li><li>Java</li><li>python</li></ul>"
+				),
+				//css("propertyname","value");
+				//css({"propertyname":"value","propertyname":"value",...});
+				$(this).css({"font-size":"40px","color":"blue"});
+
+				
+			});
+		});
+		</script>
+	</body>
+</html>

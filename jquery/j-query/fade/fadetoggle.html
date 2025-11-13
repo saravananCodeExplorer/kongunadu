@@ -1,0 +1,57 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle(1000);
+    $("#div2").fadeToggle(2000);
+    $("#div3").fadeToggle(3000);
+  });
+});
+</script>
+<style>
+#div1{
+width:150px;
+height:150px;
+
+/* display:none; */
+background-image:url('../slide/img3.jpg');
+background-size:cover;
+
+}
+#div2{
+width:150px;
+height:150px;
+/* display:none; */
+background-image:url('../slide/img2.jpg');
+background-size:cover;
+}
+#div3{
+width:150px;
+height:150px;
+/* display:none; */
+background-image:url('../slide/img1.jpg');
+background-size:cover;
+}
+button{
+background-color:green;
+color:yellow;
+padding:10px;
+border:none;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+
+<p>Demonstrate fadeToggle() with different parameters.</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1"></div><br>
+<div id="div2"></div><br>
+<div id="div3"></div>
+
+</body>
+</html>

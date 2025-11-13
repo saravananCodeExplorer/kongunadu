@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>SetInterval Example</h3>
+<p id="output"></p>
+
+<script>
+let count = 0;
+
+let timer = setInterval(() => {
+  count++;
+  document.getElementById("output").innerText = "Count: " + count;
+
+//   if (count === 5) {  // stop after 5 times
+//     clearInterval(timer);
+//     document.getElementById("output").innerText += " (Stopped)";
+//   }
+}, 2000);
+</script>
+
+</body>
+</html>

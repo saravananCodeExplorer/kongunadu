@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+        $('button').click(function(){
+
+            $("#div1").fadeTo(2000,0.6);
+            $("#div2").fadeTo(5000,0.1);
+            $("#div3").fadeTo(4000,0.5);
+        });
+
+});
+</script>
+<style>
+
+ button{
+    background-color: lightcoral;
+    color: azure;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ } 
+ 
+ #div1{
+
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    background-image: url('./img2.jpg');
+
+
+
+ }
+
+ #div2{
+
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+
+ }
+
+ #div3{
+
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <button>click to fade the boxes</button>
+    <div id="div1">A</div>
+    <div id="div2">B</div>
+    <div id="div3">C</div>
+    
+</body>
+</html>

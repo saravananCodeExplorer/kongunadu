@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>ODD Even Selector</title>
+	</head>
+	<body>
+		<h1>isysway</h1>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>raja</td>
+			</tr>
+			<tr>
+				<td>course</td>
+				<td>java</td>
+			</tr>
+			<tr>
+				<td>duration</td>
+				<td>1 month</td>
+			</tr>
+			<tr>
+				<td>time</td>
+				<td>6-7</td>
+			</tr>
+			<tr>
+				<td>address</td>
+				<td>thanjavur</td>
+			</tr>
+			<tr>
+				<td>mobile</td>
+				<td>8965748325
+				</td>
+			</tr>
+		</table>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+			$("document").ready(function(){
+				$("tr:odd").css('color','red');
+				$("tr:even").css('color','green');
+			});
+		</script>
+	</body>
+</html>

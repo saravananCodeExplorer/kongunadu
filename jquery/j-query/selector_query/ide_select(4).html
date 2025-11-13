@@ -1,0 +1,19 @@
+ <html>
+	<head>
+		<title>ID Selector</title>
+	</head>
+	<body>
+		<h1 id="a">Isysway</h1>
+		<h1>Computer Education</h1> 
+		<h2>Learn More Be Smart</h2>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#a").click(function(){
+				$(this).html("<h6>education</h6>");
+				
+			});
+		});
+		</script>	
+	</body>
+</html>
