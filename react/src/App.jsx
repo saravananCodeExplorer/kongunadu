@@ -1,16 +1,17 @@
-import StyledComponent from "./components/hook/UseRef/UseRef";
 
+import Updating from "./components/mounting/Updating";
 
 
 
 
 function App() {
   return (
-    <div>
+    <>
 <h1>hello</h1>
-<StyledComponent/>
 
-    </div>
+<Updating/>
+
+    </>
   );
 }
 
