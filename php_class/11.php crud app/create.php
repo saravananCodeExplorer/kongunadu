@@ -11,8 +11,10 @@ if(isset($_POST['submit']))
 	       values('$name','$age','$address','$salary')";
     $result = mysqli_query($db,$qry);
 	if($result){
-		// echo"Register successfully";
-		header("location:read.php");
+		    //  Correct way to show alert
+        echo "<script>alert('Registered successfully');</script>";
+        //Redirect after a short delay
+        echo "<script>window.location.href='read.php';</script>";
 		
 	}
 	else{
