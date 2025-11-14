@@ -2,6 +2,7 @@ import React ,{useState}from 'react'
 
 const Demo = () => {
     const [show,setShow] = useState(true)
+    const [login,setLogin] =useState(true)
 
       const products = [
     { id: 1, name: 'Laptop', price: 999, inStock: true },
@@ -11,11 +12,18 @@ const Demo = () => {
   ];
   return (
     <div>
+      <button onClick={()=>setLogin(!login)}>
+        {login ? "logout ":"login"}
+      </button>
+      {login ? <h1>Welocme User</h1> :<h2>Please Login</h2>
+      }
+
+      <hr />
         <button onClick={(()=>setShow(!show))}>
             {show ? "hide" :"show"} Products
         </button> 
      <br />
-        {/* {show && products.map((item,index)=>{
+        {show && products.map((item,index)=>{
             return (
             <ul>
                 <li key={index}>Index:{index}</li>
@@ -26,7 +34,7 @@ const Demo = () => {
             </ul>
             )
            })
-        } */}
+        }
 {/* 
         {show && products.map((item) =>(
             <li key={item.id}>
@@ -34,6 +42,8 @@ const Demo = () => {
                 Name:{item.name} <br />
             </li>
         ))} */}
+
+
     </div>
   )
 }
