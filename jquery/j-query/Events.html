@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Events Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .box { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+  <h2>jQuery Events: click(), dblclick(), change()</h2>
+
+  <!-- CLICK EVENT -->
+  <div class="box">
+    <button id="btnClick">Click Me</button>
+    <p id="clickMsg"></p>
+  </div>
+
+  <!-- DOUBLE CLICK EVENT -->
+  <div class="box">
+    <p id="dblPara">Double click this text</p>
+  </div>
+
+  <!-- CHANGE EVENT -->
+  <div class="box">
+    <select id="citySelect">
+      <option value="">Select City</option>
+      <option>Chennai</option>
+      <option>Coimbatore</option>
+      <option>Madurai</option>
+    </select>
+
+    <p id="changeMsg"></p>
+  </div>
+
+  <script>
+    // click()
+    $("#btnClick").click(function(){
+      $("#clickMsg").text("Button clicked!");
+    });
+
+    // dblclick()
+    $("#dblPara").dblclick(function(){
+      $(this).css("color", "red").text("You double-clicked!");
+    });
+
+    // change()
+    $("#citySelect").change(function(){
+      $("#changeMsg").text("You selected: " + $(this).val());
+    });
+  </script>
+
+</body>
+</html>
