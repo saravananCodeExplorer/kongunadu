@@ -1,6 +1,6 @@
 // src/ParentComponent.js
 import React from 'react';
-import ChildComponent2 from './Child2.js';
+import ChildComponent2 from './Child2.jsx';
 import ChildComponent from './Child.js';
 
 function ParentComponent2() {

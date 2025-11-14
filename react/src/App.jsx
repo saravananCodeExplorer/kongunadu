@@ -1,15 +1,11 @@
-
-import Updating from "./components/mounting/Updating";
-
-
+import Demo from "./components/Demo";
 
 
 function App() {
   return (
     <>
-<h1>hello</h1>
-
-<Updating/>
+<h1>Hello World!</h1>
+  <Demo/>
 
     </>
   );
