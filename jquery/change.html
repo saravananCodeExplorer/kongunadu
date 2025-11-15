@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery change() Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <h3>jQuery change() Event Demo</h3>
+
+    <label>Enter Name:</label>
+    <input type="text" id="username"><br><br>
+
+    <label>Select City:</label>
+    <select id="city">
+        <option value="">Choose...</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Ariyalur">Ariyalur</option>
+    </select>
+
+    <script>
+        // Input change
+        $("#username").change(function () {
+            alert("You typed: " + $(this).val());
+        });
+
+        // Dropdown change
+        $("#city").change(function () {
+            alert("You selected: " + $(this).val());
+        });
+    </script>
+
+</body>
+</html>
